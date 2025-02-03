@@ -67,7 +67,7 @@
 }
 
 .sidebar-container.collapsed {
-  width: 80px;
+  width: 90px;
 }
 
 .sidebar-nav ul {
@@ -96,7 +96,7 @@
 
 /* Sidebar Icons */
 .sidebar-nav ul li a i {
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 /* Sub-menu */
@@ -142,6 +142,32 @@
   background-color: #495057;
   color: white;
 }
+
+
+
+/* Tooltip styles */
+.sidebar-container.collapsed ul li a::after {
+  content: attr(title);
+  position: absolute;
+  left: 90px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sidebar-container.collapsed ul li a:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Hamburger Icon */
 .nav-toggle {
   background: none;
@@ -154,7 +180,7 @@
   width: 25px; /* Adjusted for a better fit */
   position: relative;
   top: 20px;
-  right: 840px;
+  right: 845px;
 }
 
 .hamburger {
