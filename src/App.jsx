@@ -7,7 +7,7 @@ function App() {
     <div className="app-container">
       <Sidebar />
       <div className="content">
-        <h1>Welcome to the Dashboard</h1>
+        <h1>Dashboard</h1>
       </div>
     </div>
   );

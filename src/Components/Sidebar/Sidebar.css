@@ -168,6 +168,33 @@
   visibility: visible;
 }
 
+
+
+
+/* Tooltip for Dropdowns */
+.sidebar-container.collapsed ul li.dropdown a::after {
+  content: attr(title);
+  position: absolute;
+  left: 90px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sidebar-container.collapsed ul li.dropdown a:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /* Hamburger Icon */
 .nav-toggle {
   background: none;

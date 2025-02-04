@@ -3,5 +3,8 @@
 }
 .content {
   flex-grow: 1;
-  padding: 20px;
+  padding: 80px;
+  position: relative;
+  left: 250px;
+  top: 20px;
 }
